@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import figuras.triangulo.TipoTriangulo;
 import figuras.triangulo.Triangulo;
 import figuras.triangulo.TrianguloException;
 
@@ -38,6 +39,11 @@ public class TrianguloTest {
 	
 	@Test
 	public void tipoTest() {
+		assertEquals(TipoTriangulo.ISOSCELES, triangulo3.getTipo());
+	}
+	
+	@Test
+	public void tipoDiferenteTest() {
 		assertNotEquals(triangulo3.getTipo(), triangulo1.getTipo());
 	}
 
