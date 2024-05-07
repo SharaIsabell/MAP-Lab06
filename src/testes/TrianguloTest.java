@@ -35,5 +35,10 @@ public class TrianguloTest {
 	public void perimetroTest() {
 		assertEquals(13, triangulo3.perimetro(), 0);
 	}
+	
+	@Test
+	public void tipoTest() {
+		assertNotEquals(triangulo3.getTipo(), triangulo1.getTipo());
+	}
 
 }
