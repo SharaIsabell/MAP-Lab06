@@ -1,6 +1,8 @@
 package figuras.quadrado;
 
-public class Quadrado {
+import figuras.Figura;
+
+public class Quadrado implements Figura{
 	private double lado;
 
 	public Quadrado(double lado) throws QuadradoException {

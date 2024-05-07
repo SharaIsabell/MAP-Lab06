@@ -1,6 +1,8 @@
 package figuras.circulo;
 
-public class Circulo {
+import figuras.Figura;
+
+public class Circulo implements Figura{
 	private static Circulo instancia = null;
 	private double raio;
 	public static final double PI = 3.14;

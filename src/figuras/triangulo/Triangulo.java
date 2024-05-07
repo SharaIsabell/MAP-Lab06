@@ -1,6 +1,8 @@
 package figuras.triangulo;
 
-public class Triangulo {
+import figuras.Figura;
+
+public class Triangulo implements Figura{
 	private static Triangulo[] instancias = new Triangulo[TipoTriangulo.values().length];
 	private TipoTriangulo tipo;
 	private double lado1, lado2, lado3;
